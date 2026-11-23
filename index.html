@@ -1,0 +1,464 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <meta name="description" content="11月10日，《未来科技与产业创新实践》举行结课展示。27位研究生组成13个小组，向评委展示商业计划书/技术及产业分析报告。">
+  <title>课程回顾｜未来科技与产业创新创业导引课·第八课：结课实践</title>
+  <style>
+    :root { --purple:#65387d; --head:#382741; --ink:#302c34; --muted:#716678; --rule:#e8e0eb; --paper:#fff; }
+    * { box-sizing:border-box; }
+    html { background:#efedf1; color-scheme:light; -webkit-text-size-adjust:100%; }
+    body { margin:0; color:var(--ink); font:16px/1.6 "PingFang SC","Microsoft YaHei","Noto Sans CJK SC",sans-serif; }
+    article { width:100%; max-width:740px; margin:0 auto 34px; padding:0 44px 32px; background:var(--paper); box-shadow:0 5px 35px #32244208; }
+    .masthead { padding:31px 0 24px; border-top:7px solid var(--purple); border-bottom:1px solid var(--rule); text-align:center; }
+    .masthead .series { margin:0 0 14px; color:var(--purple); font-size:12px; font-weight:600; letter-spacing:2px; }
+    h1 { margin:0; color:var(--head); font-weight:700; line-height:1.55; }
+    .course-title, .lesson { display:block; }
+    .course-title { font-size:clamp(18px,5.45vw,28px); }
+    .lesson { margin-top:4px; font-size:clamp(19px,4.7vw,23px); letter-spacing:1.2px; }
+    .subtitle { margin:13px 0 0; color:var(--purple); font-size:15px; line-height:1.65; text-wrap:balance; }
+    .subtitle span { display:inline-block; }
+    .meta { margin:9px 0 0; color:var(--muted); font-size:12px; letter-spacing:.3px; }
+    .opening { margin-top:24px; }
+    .brief {
+      display:grid; grid-template-columns:repeat(3,minmax(0,1fr));
+      margin:20px 0 0; padding:14px 0; background:#f8f5fa;
+      border-block:1px solid #e8e0eb; text-align:center; break-inside:avoid;
+    }
+    .brief > div { position:relative; min-width:0; display:flex; flex-direction:column; align-items:center; gap:4px; }
+    .brief > div + div::before { content:""; position:absolute; inset:7px auto 7px 0; width:1px; background:#d9cddf; }
+    .brief dt { color:#56495d; font-size:13px; font-weight:500; line-height:1.4; white-space:nowrap; }
+    .brief dd { order:-1; display:flex; align-items:baseline; gap:4px; margin:0; color:var(--purple); }
+    .brief-number { font:400 clamp(29px,5vw,35px)/1.04 Georgia,"Times New Roman",serif; font-variant-numeric:lining-nums tabular-nums; }
+    .brief-unit { color:#735d7d; font-size:12px; line-height:1; }
+    .copy { margin:0 0 15px; font-size:16px; line-height:1.6; overflow-wrap:break-word; }
+    .part { margin-top:31px; }
+    .part-head { padding-top:19px; margin-bottom:15px; border-top:1px solid var(--rule); }
+    .part-label { margin:0 0 4px; color:var(--purple); font-size:12px; letter-spacing:1px; font-weight:600; }
+    h2 { margin:0; color:var(--head); font-size:19px; line-height:1.55; }
+    figure { margin:19px 0 21px; break-inside:avoid; }
+    .photo { display:block; width:100%; height:auto; }
+    figcaption { margin:7px auto 0; color:var(--muted); font-size:12px; line-height:1.8; text-align:center; }
+    .panel-caption span { display:inline-block; }
+    .projects { margin:25px 0 0; padding-top:17px; border-top:2px solid var(--purple); }
+    .group { margin:22px 0 0; border-top:1px solid var(--rule); padding-top:19px; scroll-margin-top:12px; }
+    .projects > .group:first-child { margin-top:0; padding-top:0; border-top:0; }
+    .group-title { display:flex; gap:0; align-items:baseline; font-size:19px; line-height:1.55; }
+    .group-tag { flex:none; color:var(--purple); white-space:nowrap; }
+    .group-title .separator { flex:none; font-weight:400; color:#ab94b5; margin:0 2px; }
+    .project-name { min-width:0; overflow-wrap:anywhere; }
+    .members { margin:5px 0 13px; color:var(--muted); font-size:14px; line-height:1.65; }
+    .member-label { margin-right:.65em; }
+    .image-pair { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); align-items:start; gap:8px; margin:14px 0 0; }
+    .pair-item { min-width:0; margin:0; }
+    .pair-caption { margin:6px 0 0; color:var(--muted); font-size:12px; line-height:1.8; text-align:center; white-space:nowrap; }
+    .image-open { display:block; width:100%; min-width:0; padding:0; border:0; border-radius:4px; background:transparent; cursor:zoom-in; }
+    .image-open img, .photo { border:1px solid #e6dfea; border-radius:4px; }
+    .image-open img { display:block; width:100%; height:auto; aspect-ratio:16/9; object-fit:contain; background:#fff; transition:border-color .15s ease,box-shadow .15s ease; }
+    @media(hover:hover) and (pointer:fine) {
+      .image-open:hover img { border-color:#bda8c6; box-shadow:0 1px 4px rgb(72 47 84 / .12); }
+    }
+    @media(prefers-reduced-motion:reduce) { .image-open img { transition:none; } }
+    .image-open:focus-visible { outline:2px solid var(--purple); outline-offset:2px; }
+    body.preview-open { overflow:hidden; }
+    .image-preview { box-sizing:border-box; padding:0; border:0; width:min(96vw,1560px); height:90vh; height:90dvh; max-width:100vw; max-height:96vh; margin:auto; color:#fff; background:#211f23; }
+    .image-preview:not([open]) { display:none; }
+    .image-preview::backdrop { background:rgb(16 14 18 / .84); }
+    .image-preview.fallback-open { position:fixed; inset:0; z-index:1000; box-shadow:0 0 0 120vmax #171519e6; }
+    .preview-inner { height:100%; display:flex; flex-direction:column; }
+    .preview-tools { display:flex; gap:8px; align-items:center; padding:5px 10px; }
+    .preview-heading { flex:1; margin:0; font-size:14px; font-weight:500; }
+    .preview-tools button { min-height:44px; padding:2px 8px; border:0; background:none; color:inherit; font:inherit; font-size:14px; cursor:pointer; }
+    .preview-tools button:focus-visible { outline:2px solid white; }
+    .preview-canvas { flex:1; min-width:0; min-height:0; display:grid; grid-template: minmax(0,1fr) / minmax(0,1fr); place-items:center; overflow:auto; overscroll-behavior:contain; }
+    .preview-canvas img { display:block; width:auto; height:auto; max-width:100%; max-height:100%; }
+    .preview-canvas.actual-size { display:block; }
+    .preview-canvas.actual-size img { max-width:none; max-height:none; margin:0 auto; }
+    .course-note, .course-poster, footer { font:16px/normal "Microsoft YaHei","PingFang SC",Arial,sans-serif; -webkit-font-smoothing:antialiased; }
+    .course-note p { margin:0 0 19px; letter-spacing:.3px; text-align:justify; overflow-wrap:break-word; }
+    .course-poster { margin:23px 0 27px; }
+    .course-poster figcaption { margin:8px 0 0; font-size:11px; line-height:1.8; letter-spacing:.15px; }
+    .course-note{border-top:1px solid #e5dbea;margin-top:32px;padding-top:22px}.course-note h2{font-size:17px;color:#65387d;padding-left:11px;border-left:2px solid #a285b2;margin-bottom:16px}.course-note .course-name{font-size:15px;font-weight:600;letter-spacing:0;color:#65387d;text-align:left;margin-bottom:15px}.course-note p{font-size:14px;line-height:1.95;color:#716778}.course-poster{margin-top:24px;padding-top:22px;border-top:1px solid #e6dfea}.course-poster img{display:block;width:100%;height:auto}.course-poster figcaption{color:#806b8b}footer{border-top:1px solid #e5dfeb;margin-top:30px;padding-top:22px;text-align:center;font-size:10px;line-height:1.9;color:#897991;letter-spacing:.8px}.endmark{font:14px Georgia,serif;color:#65387d;letter-spacing:4px;margin-bottom:9px}
+    @media(max-width:600px) {
+      article { margin:0; padding:0 22px 28px; box-shadow:none; }
+      .masthead { padding:25px 0 21px; border-top-width:6px; }
+      .opening { margin-top:20px; }
+      .brief { margin-top:16px; padding-block:11px; }
+      .part { margin-top:25px; }
+      .part-head { padding-top:16px; }
+      .image-pair { gap:5px; }
+      .course-note h2 { line-height:1.6; }
+      .course-note p { font-size:13px; letter-spacing:.2px; margin-bottom:18px; }
+      .course-note .course-name { font-size:14px; }
+      .course-poster { margin-bottom:25px; }
+      .course-poster figcaption { font-size:10.5px; letter-spacing:0; }
+      .image-preview { width:100vw; height:100vh; height:100dvh; max-height:100dvh; }
+    }
+    @media print {
+      html,body { background:#fff; }
+      article { max-width:none; padding:0; margin:0; }
+      .image-preview { display:none; }
+      .part-head,.group-title,.members,.course-note h2 { break-after:avoid; }
+      figure { break-inside:avoid; }
+    }
+  </style>
+</head>
+<body>
+<main>
+  <article aria-labelledby="article-title">
+    <header class="masthead">
+      <p class="series">课程回顾</p>
+      <h1 id="article-title"><span class="course-title">未来科技与产业创新创业导引课</span><span class="lesson">第八课 · 结课实践</span></h1>
+      <p class="subtitle"><span>从走进产业到发现机会，</span><span>13组硬科技方案的结课答辩</span></p>
+      <p class="meta"><time datetime="2026-11-10">2026年11月10日</time>　·　深圳</p>
+    </header>
+
+    <div class="opening">
+      <p class="copy">11月10日，《未来科技与产业创新实践》在清华大学深圳国际研究生院C1-101教室举行结课展示。本次活动由清华大学深圳国际研究生院双螺旋中心主办，深圳市清华大学校友会金融投资分会、水木南国科创协办。</p>
+      <p class="copy">讲台交给了学生。各组携商业计划书/技术及产业分析报告登台，10分钟直陈问题与判断依据，5分钟接受评委现场追问。</p>
+      <dl class="brief" aria-label="结课展示数据">
+        <div><dt>汇报小组</dt><dd><span class="brief-number">13</span><span class="brief-unit">组</span></dd></div>
+        <div><dt>研究生</dt><dd><span class="brief-number">27</span><span class="brief-unit">位</span></dd></div>
+        <div><dt>产投评委</dt><dd><span class="brief-number">4</span><span class="brief-unit">位</span></dd></div>
+      </dl>
+    </div>
+
+    <section class="projects" aria-label="小组项目汇报">
+      <section class="group" id="group-01" data-group="1" aria-labelledby="group-01-title">
+        <h2 class="group-title" id="group-01-title"><span class="group-tag">第一组</span><span class="separator">｜</span><span class="project-name">面向AI推理的光电混合计算</span></h2>
+        <p class="members"><span class="member-label">小组成员</span><span class="names">谢佳艺、李树楷</span></p>
+        <p class="copy">光计算省下的电，够不够抵消整机的额外开销？他们将数据搬运、光电转换、光源与校准的耗电一并入账，比较光电混合在何种条件下才真正省电。</p>
+        <div class="image-pair">
+          <figure class="pair-item">
+            <button type="button" class="image-open" data-role="stage" data-preview-title="第一组 · 现场汇报" aria-label="放大第一组现场汇报照片" aria-haspopup="dialog" aria-describedby="group-01-stage-caption">
+              <img class="photo" src="assets/01-classroom.jpg" width="1280" height="720" alt="第一组一位同学面向听众持麦讲解，另一位在屏幕旁听他说明光电混合计算项目。">
+            </button>
+            <figcaption class="pair-caption" id="group-01-stage-caption">现场汇报</figcaption>
+          </figure>
+          <figure class="pair-item">
+            <button type="button" class="image-open" data-role="cover" data-source="pptx" data-preview-title="第一组 · 项目封面" aria-label="放大第一组项目封面" aria-haspopup="dialog" aria-describedby="group-01-cover-caption">
+              <img class="cover-image" src="assets/cover-01.jpg" width="1600" height="900" alt="第一组《面向AI推理的光电混合计算》项目封面">
+            </button>
+            <figcaption class="pair-caption" id="group-01-cover-caption">项目封面</figcaption>
+          </figure>
+        </div>
+      </section>
+      <section class="group" id="group-02" data-group="2" aria-labelledby="group-02-title">
+        <h2 class="group-title" id="group-02-title"><span class="group-tag">第二组</span><span class="separator">｜</span><span class="project-name">Eigensolution 我学我术</span></h2>
+        <p class="members"><span class="member-label">小组成员</span><span class="names">陈家俊、曹泽昱</span></p>
+        <p class="copy">啃教材卡壳，难的往往不是这一页，而是漏掉的前置知识。现场演示的AI学习助理将概念连成图谱，引导学习者找到读懂教材所需的基础。</p>
+        <div class="image-pair">
+          <figure class="pair-item">
+            <button type="button" class="image-open" data-role="stage" data-preview-title="第二组 · 现场汇报" aria-label="放大第二组现场汇报照片" aria-haspopup="dialog" aria-describedby="group-02-stage-caption">
+              <img class="photo" src="assets/02-learning.jpg" width="1280" height="720" alt="第二组两位同学现场演示学习助理，主讲人面向听众用手势讲解，屏幕上显示知识图谱。" loading="lazy">
+            </button>
+            <figcaption class="pair-caption" id="group-02-stage-caption">现场汇报</figcaption>
+          </figure>
+          <figure class="pair-item">
+            <button type="button" class="image-open" data-role="cover" data-source="projection" data-preview-title="第二组 · 项目封面" aria-label="放大第二组项目封面" aria-haspopup="dialog" aria-describedby="group-02-cover-caption">
+              <img class="cover-image" src="assets/cover-02.jpg" width="1440" height="810" alt="第二组《Eigensolution 我学我术》项目封面，取自现场投影" loading="lazy">
+            </button>
+            <figcaption class="pair-caption" id="group-02-cover-caption">项目封面</figcaption>
+          </figure>
+        </div>
+      </section>
+      <section class="group" id="group-03" data-group="3" aria-labelledby="group-03-title">
+        <h2 class="group-title" id="group-03-title"><span class="group-tag">第三组</span><span class="separator">｜</span><span class="project-name">AI驱动的材料自主实验平台</span></h2>
+        <p class="members"><span class="member-label">小组成员</span><span class="names">刘汉清、杨天</span></p>
+        <p class="copy">材料生长靠人工衔接，批次数据常各自孤立。围绕CVD生长与光学表征，他们提出用样品编号串起配方、工艺与结果，让实验可追溯对照。</p>
+        <div class="image-pair">
+          <figure class="pair-item">
+            <button type="button" class="image-open" data-role="stage" data-preview-title="第三组 · 现场汇报" aria-label="放大第三组现场汇报照片" aria-haspopup="dialog" aria-describedby="group-03-stage-caption">
+              <img class="photo" src="assets/03-materials.jpg" width="1280" height="720" alt="两位同学在讲台旁结合流程图讲解材料自主实验平台。" loading="lazy">
+            </button>
+            <figcaption class="pair-caption" id="group-03-stage-caption">现场汇报</figcaption>
+          </figure>
+          <figure class="pair-item">
+            <button type="button" class="image-open" data-role="cover" data-source="pptx" data-preview-title="第三组 · 项目封面" aria-label="放大第三组项目封面" aria-haspopup="dialog" aria-describedby="group-03-cover-caption">
+              <img class="cover-image" src="assets/cover-03.jpg" width="1600" height="900" alt="第三组《AI驱动的材料自主实验平台》项目封面" loading="lazy">
+            </button>
+            <figcaption class="pair-caption" id="group-03-cover-caption">项目封面</figcaption>
+          </figure>
+        </div>
+      </section>
+      <section class="group" id="group-04" data-group="4" aria-labelledby="group-04-title">
+        <h2 class="group-title" id="group-04-title"><span class="group-tag">第四组</span><span class="separator">｜</span><span class="project-name">变刚度眼外手术机器人</span></h2>
+        <p class="members"><span class="member-label">小组成员</span><span class="names">罗晗瑜、阳涵</span></p>
+        <p class="copy">后巩膜加固术须在眼后毫米级间隙穿行，既要柔顺入路又要稳定承力。受穿山甲鳞片嵌锁启发，团队设计了变刚度眼外器械方案。</p>
+        <div class="image-pair">
+          <figure class="pair-item">
+            <button type="button" class="image-open" data-role="stage" data-preview-title="第四组 · 现场汇报" aria-label="放大第四组现场汇报照片" aria-haspopup="dialog" aria-describedby="group-04-stage-caption">
+              <img class="photo" src="assets/group-04-eye.jpg" width="1280" height="720" alt="第四组同学在讲台前介绍眼外手术机器人的设计，身后投影列出汇报提纲。" loading="lazy">
+            </button>
+            <figcaption class="pair-caption" id="group-04-stage-caption">现场汇报</figcaption>
+          </figure>
+          <figure class="pair-item">
+            <button type="button" class="image-open" data-role="cover" data-source="pptx" data-preview-title="第四组 · 项目封面" aria-label="放大第四组项目封面" aria-haspopup="dialog" aria-describedby="group-04-cover-caption">
+              <img class="cover-image" src="assets/cover-04.jpg" width="1600" height="900" alt="第四组《变刚度眼外手术机器人》项目封面" loading="lazy">
+            </button>
+            <figcaption class="pair-caption" id="group-04-cover-caption">项目封面</figcaption>
+          </figure>
+        </div>
+      </section>
+      <section class="group" id="group-05" data-group="5" aria-labelledby="group-05-title">
+        <h2 class="group-title" id="group-05-title"><span class="group-tag">第五组</span><span class="separator">｜</span><span class="project-name">芯净无尘 · 超洁净半导体行业多相协同净化活性纳纤膜</span></h2>
+        <p class="members"><span class="member-label">小组成员</span><span class="names">陈宇、陈星甫</span></p>
+        <p class="copy">洁净室同时面临超细颗粒与气态污染，叠加滤材却会推高风阻。他们提出用一层活性纳纤膜拦截颗粒、吸附气态污染物，以效率、压降和寿命权衡得失。</p>
+        <div class="image-pair">
+          <figure class="pair-item">
+            <button type="button" class="image-open" data-role="stage" data-preview-title="第五组 · 现场汇报" aria-label="放大第五组现场汇报照片" aria-haspopup="dialog" aria-describedby="group-05-stage-caption">
+              <img class="photo" src="assets/group-05-filter.jpg" width="1280" height="720" alt="第五组的两位同学站在讲台两侧，一位面向投影讲解滤膜方案。" loading="lazy">
+            </button>
+            <figcaption class="pair-caption" id="group-05-stage-caption">现场汇报</figcaption>
+          </figure>
+          <figure class="pair-item">
+            <button type="button" class="image-open" data-role="cover" data-source="pdf" data-preview-title="第五组 · 项目封面" aria-label="放大第五组项目封面" aria-haspopup="dialog" aria-describedby="group-05-cover-caption">
+              <img class="cover-image" src="assets/cover-05.jpg" width="1600" height="900" alt="第五组《芯净无尘 · 超洁净半导体行业多相协同净化活性纳纤膜》项目封面" loading="lazy">
+            </button>
+            <figcaption class="pair-caption" id="group-05-cover-caption">项目封面</figcaption>
+          </figure>
+        </div>
+      </section>
+      <section class="group" id="group-06" data-group="6" aria-labelledby="group-06-title">
+        <h2 class="group-title" id="group-06-title"><span class="group-tag">第六组</span><span class="separator">｜</span><span class="project-name">SmartGrip 羽毛球握持感知与训练反馈构想</span></h2>
+        <p class="members"><span class="member-label">小组成员</span><span class="names">何家轩、冯柯涵</span></p>
+        <p class="copy">视频看得清球路，却拍不清指尖收放的刹那。结合18份球场访谈，他们提出用握把压力对照击球时序，也坦诚局部读数不等于整手握力。</p>
+        <div class="image-pair">
+          <figure class="pair-item">
+            <button type="button" class="image-open" data-role="stage" data-preview-title="第六组 · 现场汇报" aria-label="放大第六组现场汇报照片" aria-haspopup="dialog" aria-describedby="group-06-stage-caption">
+              <img class="photo" src="assets/04-grip.jpg" width="1280" height="720" alt="SmartGrip组的两位同学在台前笑着交流，一位抬起双手，另一位向前走、面向听众。" loading="lazy">
+            </button>
+            <figcaption class="pair-caption" id="group-06-stage-caption">现场汇报</figcaption>
+          </figure>
+          <figure class="pair-item">
+            <button type="button" class="image-open" data-role="cover" data-source="pptx" data-preview-title="第六组 · 项目封面" aria-label="放大第六组项目封面" aria-haspopup="dialog" aria-describedby="group-06-cover-caption">
+              <img class="cover-image" src="assets/cover-06.jpg" width="1600" height="900" alt="第六组《SmartGrip 羽毛球握持感知与训练反馈构想》项目封面" loading="lazy">
+            </button>
+            <figcaption class="pair-caption" id="group-06-cover-caption">项目封面</figcaption>
+          </figure>
+        </div>
+      </section>
+      <section class="group" id="group-07" data-group="7" aria-labelledby="group-07-title">
+        <h2 class="group-title" id="group-07-title"><span class="group-tag">第七组</span><span class="separator">｜</span><span class="project-name">眼科微型无缆磁控机器人产业化前景与落地路径</span></h2>
+        <p class="members"><span class="member-label">小组成员</span><span class="names">胡译丹、王佳贤</span></p>
+        <p class="copy">磁控机器人能在眼内游走，离剥除黄斑前膜还有多远？团队直面定位与操作瓶颈，更将可靠回收和异常时医生接管设为落地底线。</p>
+        <div class="image-pair">
+          <figure class="pair-item">
+            <button type="button" class="image-open" data-role="stage" data-preview-title="第七组 · 现场汇报" aria-label="放大第七组现场汇报照片" aria-haspopup="dialog" aria-describedby="group-07-stage-caption">
+              <img class="photo" src="assets/group-07-magnetic.jpg" width="1280" height="720" alt="第七组两位同学对照磁控机器人技术转化路线的图文页，讲解不同阶段需要哪些证据。" loading="lazy">
+            </button>
+            <figcaption class="pair-caption" id="group-07-stage-caption">现场汇报</figcaption>
+          </figure>
+          <figure class="pair-item">
+            <button type="button" class="image-open" data-role="cover" data-source="pptx" data-preview-title="第七组 · 项目封面" aria-label="放大第七组项目封面" aria-haspopup="dialog" aria-describedby="group-07-cover-caption">
+              <img class="cover-image" src="assets/cover-07.jpg" width="1600" height="900" alt="第七组《眼科微型无缆磁控机器人产业化前景与落地路径》项目封面" loading="lazy">
+            </button>
+            <figcaption class="pair-caption" id="group-07-cover-caption">项目封面</figcaption>
+          </figure>
+        </div>
+      </section>
+      <section class="group" id="group-08" data-group="8" aria-labelledby="group-08-title">
+        <h2 class="group-title" id="group-08-title"><span class="group-tag">第八组</span><span class="separator">｜</span><span class="project-name">SmileCheck AI正畸面容预测平台</span></h2>
+        <p class="members"><span class="member-label">小组成员</span><span class="names">马文骁、王一润</span></p>
+        <p class="copy">拔不拔牙、侧貌怎么变，是正畸咨询中常见的难题。SmileCheck并排展示预测面容，小组计划先用已完成治疗的病例回测准确度，再检验沟通价值。</p>
+        <div class="image-pair">
+          <figure class="pair-item">
+            <button type="button" class="image-open" data-role="stage" data-preview-title="第八组 · 现场汇报" aria-label="放大第八组现场汇报照片" aria-haspopup="dialog" aria-describedby="group-08-stage-caption">
+              <img class="photo" src="assets/05-smilecheck.jpg" width="1280" height="720" alt="SmileCheck组主讲人手持话筒、抬手讲解，身后屏幕并列展示正畸方案的侧貌示意图。" loading="lazy">
+            </button>
+            <figcaption class="pair-caption" id="group-08-stage-caption">现场汇报</figcaption>
+          </figure>
+          <figure class="pair-item">
+            <button type="button" class="image-open" data-role="cover" data-source="pptx" data-preview-title="第八组 · 项目封面" aria-label="放大第八组项目封面" aria-haspopup="dialog" aria-describedby="group-08-cover-caption">
+              <img class="cover-image" src="assets/cover-08.jpg" width="1600" height="900" alt="第八组《SmileCheck AI正畸面容预测平台》项目封面" loading="lazy">
+            </button>
+            <figcaption class="pair-caption" id="group-08-cover-caption">项目封面</figcaption>
+          </figure>
+        </div>
+      </section>
+      <section class="group" id="group-13" data-group="13" aria-labelledby="group-13-title">
+        <h2 class="group-title" id="group-13-title"><span class="group-tag">第十三组</span><span class="separator">｜</span><span class="project-name">人体状态无感监测仪</span></h2>
+        <p class="members"><span class="member-label">小组成员</span><span class="names">井思诺、林子微</span></p>
+        <p class="copy">手环不愿常戴、摄像头又涉隐私，日常照护亟需更温和的解法。小组提出用超宽带（UWB）雷达无感监测活动、睡眠与跌倒风险，并将异常提醒发送至照护平台。</p>
+        <div class="image-pair">
+          <figure class="pair-item">
+            <button type="button" class="image-open" data-role="stage" data-preview-title="第十三组 · 现场汇报" aria-label="放大第十三组现场汇报照片" aria-haspopup="dialog" aria-describedby="group-13-stage-caption">
+              <img class="photo" src="assets/06-radar.jpg" width="1280" height="720" alt="第十三组两位同学在讲台旁汇报，主讲人面向听众持麦讲解，旁边屏幕展示竞品分析。" loading="lazy">
+            </button>
+            <figcaption class="pair-caption" id="group-13-stage-caption">现场汇报</figcaption>
+          </figure>
+          <figure class="pair-item">
+            <button type="button" class="image-open" data-role="cover" data-source="pptx" data-preview-title="第十三组 · 项目封面" aria-label="放大第十三组项目封面" aria-haspopup="dialog" aria-describedby="group-13-cover-caption">
+              <img class="cover-image" src="assets/cover-13.jpg" width="1600" height="900" alt="第十三组《人体状态无感监测仪》项目封面" loading="lazy">
+            </button>
+            <figcaption class="pair-caption" id="group-13-cover-caption">项目封面</figcaption>
+          </figure>
+        </div>
+      </section>
+      <section class="group" id="group-09" data-group="9" aria-labelledby="group-09-title">
+        <h2 class="group-title" id="group-09-title"><span class="group-tag">第九组</span><span class="separator">｜</span><span class="project-name">高压断路器碳陶瓷合闸电阻</span></h2>
+        <p class="members"><span class="member-label">小组成员</span><span class="names">罗王贤、徐天驰</span></p>
+        <p class="copy">断路器合闸毫秒之间，电阻须瞬时吸能并适配紧凑空间。梳理国产进展后，他们点出批量供货的真正门槛：批次阻值一致与挂网实绩。</p>
+        <div class="image-pair">
+          <figure class="pair-item">
+            <button type="button" class="image-open" data-role="stage" data-preview-title="第九组 · 现场汇报" aria-label="放大第九组现场汇报照片" aria-haspopup="dialog" aria-describedby="group-09-stage-caption">
+              <img class="photo" src="assets/07-switchgear.jpg" width="1280" height="720" alt="第九组两位同学同框，一位在讲台左侧，另一位持麦讲解，身后的投影展示合闸电阻相关示意图。" loading="lazy">
+            </button>
+            <figcaption class="pair-caption" id="group-09-stage-caption">现场汇报</figcaption>
+          </figure>
+          <figure class="pair-item">
+            <button type="button" class="image-open" data-role="cover" data-source="pptx" data-preview-title="第九组 · 项目封面" aria-label="放大第九组项目封面" aria-haspopup="dialog" aria-describedby="group-09-cover-caption">
+              <img class="cover-image" src="assets/cover-09.jpg" width="1600" height="900" alt="第九组《高压断路器碳陶瓷合闸电阻》项目封面" loading="lazy">
+            </button>
+            <figcaption class="pair-caption" id="group-09-cover-caption">项目封面</figcaption>
+          </figure>
+        </div>
+      </section>
+      <section class="group" id="group-10" data-group="10" aria-labelledby="group-10-title">
+        <h2 class="group-title" id="group-10-title"><span class="group-tag">第十组</span><span class="separator">｜</span><span class="project-name">面向DRG付费的国产腔镜手术机器人</span></h2>
+        <p class="members"><span class="member-label">小组成员</span><span class="names">李路、晁奕炜、安志诚</span></p>
+        <p class="copy">小组引用的数据显示，2024年国内机器人辅助腔镜手术渗透率为0.7%。三位同学从DRG付费下单台手术的盈亏平衡倒推设备和耗材成本，将其作为设计约束。</p>
+        <div class="image-pair">
+          <figure class="pair-item">
+            <button type="button" class="image-open" data-role="stage" data-preview-title="第十组 · 现场汇报" aria-label="放大第十组现场汇报照片" aria-haspopup="dialog" aria-describedby="group-10-stage-caption">
+              <img class="photo" src="assets/group-10-surgical.jpg" width="1280" height="720" alt="第十组三位同学在投影旁展示国产腔镜手术机器人项目。" loading="lazy">
+            </button>
+            <figcaption class="pair-caption" id="group-10-stage-caption">现场汇报</figcaption>
+          </figure>
+          <figure class="pair-item">
+            <button type="button" class="image-open" data-role="cover" data-source="pptx" data-preview-title="第十组 · 项目封面" aria-label="放大第十组项目封面" aria-haspopup="dialog" aria-describedby="group-10-cover-caption">
+              <img class="cover-image" src="assets/cover-10.jpg" width="1600" height="900" alt="第十组《面向DRG付费的国产腔镜手术机器人》项目封面" loading="lazy">
+            </button>
+            <figcaption class="pair-caption" id="group-10-cover-caption">项目封面</figcaption>
+          </figure>
+        </div>
+      </section>
+      <section class="group" id="group-11" data-group="11" aria-labelledby="group-11-title">
+        <h2 class="group-title" id="group-11-title"><span class="group-tag">第十一组</span><span class="separator">｜</span><span class="project-name">超滑如何创造产业价值</span></h2>
+        <p class="members"><span class="member-label">小组成员</span><span class="names">傅嘉乐、何俊杰</span></p>
+        <p class="copy">灵巧手高频抓握，一颗小电机的磨损就足以令整手停摆。他们从结构超滑的极低摩擦特性切入，探讨以减磨延寿兑现产业价值的路径。</p>
+        <div class="image-pair">
+          <figure class="pair-item">
+            <button type="button" class="image-open" data-role="stage" data-preview-title="第十一组 · 现场汇报" aria-label="放大第十一组现场汇报照片" aria-haspopup="dialog" aria-describedby="group-11-stage-caption">
+              <img class="photo" src="assets/08-motor.jpg" width="1280" height="720" alt="第十一组一位同学持麦，抬手讲解摩擦与磨损带来的能耗，另一位同学在讲台旁倾听。" loading="lazy">
+            </button>
+            <figcaption class="pair-caption" id="group-11-stage-caption">现场汇报</figcaption>
+          </figure>
+          <figure class="pair-item">
+            <button type="button" class="image-open" data-role="cover" data-source="pptx" data-preview-title="第十一组 · 项目封面" aria-label="放大第十一组项目封面" aria-haspopup="dialog" aria-describedby="group-11-cover-caption">
+              <img class="cover-image" src="assets/cover-11.jpg" width="1600" height="900" alt="第十一组《超滑如何创造产业价值》项目封面" loading="lazy">
+            </button>
+            <figcaption class="pair-caption" id="group-11-cover-caption">项目封面</figcaption>
+          </figure>
+        </div>
+      </section>
+      <section class="group" id="group-12" data-group="12" aria-labelledby="group-12-title">
+        <h2 class="group-title" id="group-12-title"><span class="group-tag">第十二组</span><span class="separator">｜</span><span class="project-name">从实验室到车间：AI工业酶如何跨越落地鸿沟</span></h2>
+        <p class="members"><span class="member-label">小组成员</span><span class="names">聂士尧、涂建广</span></p>
+        <p class="copy">小组展示的案例中，工业酶催化效率在实验室提升8倍，进车间却在3天内失活。他们据此提出90天验证计划，重点检验工业酶在真实工况下能用多久。</p>
+        <div class="image-pair">
+          <figure class="pair-item">
+            <button type="button" class="image-open" data-role="stage" data-preview-title="第十二组 · 现场汇报" aria-label="放大第十二组现场汇报照片" aria-haspopup="dialog" aria-describedby="group-12-stage-caption">
+              <img class="photo" src="assets/group-12-enzyme.jpg" width="1280" height="720" alt="第十二组两位同学与案例页同框，投影展示了工业酶在实验室与工厂条件下的表现。" loading="lazy">
+            </button>
+            <figcaption class="pair-caption" id="group-12-stage-caption">现场汇报</figcaption>
+          </figure>
+          <figure class="pair-item">
+            <button type="button" class="image-open" data-role="cover" data-source="pptx" data-preview-title="第十二组 · 项目封面" aria-label="放大第十二组项目封面" aria-haspopup="dialog" aria-describedby="group-12-cover-caption">
+              <img class="cover-image" src="assets/cover-12.jpg" width="1600" height="900" alt="第十二组《从实验室到车间：AI工业酶如何跨越落地鸿沟》项目封面" loading="lazy">
+            </button>
+            <figcaption class="pair-caption" id="group-12-cover-caption">项目封面</figcaption>
+          </figure>
+        </div>
+      </section>
+    </section>
+
+    <section class="part" aria-labelledby="review">
+      <div class="part-head"><p class="part-label">结课评议</p><h2 id="review">四位评委参与课堂答辩</h2></div>
+      <p class="copy">美镓传感联合创始人刘煦、广东清大创新研究院科创投资中心副总经理陈德卫担任企业评委。</p>
+      <p class="copy">清华大学助理教授彭德利教授与深圳市清华大学校友会金融投资分会秘书长、水木南国合伙人张宇轩担任课程评委。</p>
+      <figure>
+        <img class="photo" src="assets/09-panel.jpg" width="1600" height="1000" alt="课程结束后，四位评委在清华大学深圳国际研究生院的讲台前合影。" loading="lazy">
+        <figcaption class="panel-caption"><span>课程评委为企业评委颁发致谢纪念牌并合影</span><span>（从左至右：张宇轩、刘煦、陈德卫、彭德利）</span></figcaption>
+      </figure>
+      <p class="copy course-close">八周里，同学们走进企业展厅与研发一线，了解产品在使用中遇到的难题。结课时，他们带着球场访谈、单台手术的成本测算和工业酶寿命验证计划走上讲台。</p>
+      <p class="copy">同学们把参访中学到的判断方法用在了自己的方案上，在答辩中既讲清技术能做什么，也用证据说明谁需要它、为什么值得做。</p>
+    </section>
+
+    <section class="course-note"><h2>关于课程</h2><p class="course-name">《未来科技与产业创新实践》</p><p>本课程是一门研究生公共课，设2学分、32课时，共8周。围绕生物医药、材料与先进制造、AI与具身智能等方向，将“前沿理论研讨”与“科创现场调研”相结合，帮助同学们认识科技创新、产业发展与科创生态之间的联系。</p><p>一线投资人、企业创始人及高管走进课堂，同学们也走进企业，了解产品、岗位与真实需求，让接下来的学习与研究，多一份来自产业真实问题的牵引。</p></section>
+<figure id="course-poster" class="course-poster"><img src="assets/10-course-poster.jpg" width="1280" height="3200" alt="未来科技与产业创新实践总课程介绍海报" decoding="async"><figcaption>课程介绍 · 2学分 · 32课时 · 8周</figcaption></figure>
+<footer><div class="endmark">END</div>供稿：深圳市清华大学校友会金融投资分会</footer>
+  </article>
+</main>
+<dialog id="image-preview" class="image-preview" aria-labelledby="preview-heading">
+  <div class="preview-inner">
+    <div class="preview-tools">
+      <p id="preview-heading" class="preview-heading"></p>
+      <button type="button" id="preview-zoom" aria-pressed="false">原始尺寸</button>
+      <button type="button" id="preview-close" autofocus>关闭</button>
+    </div>
+    <div class="preview-canvas" id="preview-canvas"></div>
+  </div>
+</dialog>
+<script>
+  (() => {
+    const viewer = document.getElementById("image-preview");
+    const canvas = document.getElementById("preview-canvas");
+    const heading = document.getElementById("preview-heading");
+    const zoom = document.getElementById("preview-zoom");
+    const closeButton = document.getElementById("preview-close");
+    let opener;
+
+    function setZoom(actual) {
+      canvas.classList.toggle("actual-size", actual);
+      zoom.setAttribute("aria-pressed", String(actual));
+      zoom.textContent = actual ? "适应屏幕" : "原始尺寸";
+      canvas.scrollTop = 0;
+      canvas.scrollLeft = 0;
+    }
+    function restoreArticle() {
+      viewer.classList.remove("fallback-open");
+      document.body.classList.remove("preview-open");
+      canvas.replaceChildren();
+      if (opener) opener.focus({preventScroll:true});
+    }
+    function closePreview() {
+      if (typeof viewer.close === "function") viewer.close();
+      else {
+        viewer.removeAttribute("open");
+        restoreArticle();
+      }
+    }
+
+    document.querySelector("article").addEventListener("click", event => {
+      const button = event.target.closest(".image-open");
+      if (!button) return;
+      opener = button;
+      const source = button.querySelector("img");
+      const picture = new Image();
+      picture.alt = source.alt;
+      picture.src = source.currentSrc || source.src;
+      canvas.replaceChildren(picture);
+      heading.textContent = button.dataset.previewTitle;
+      setZoom(false);
+      document.body.classList.add("preview-open");
+      if (typeof viewer.showModal === "function") viewer.showModal();
+      else {
+        viewer.classList.add("fallback-open");
+        viewer.setAttribute("open","");
+        closeButton.focus();
+      }
+    });
+    zoom.addEventListener("click", () => setZoom(!canvas.classList.contains("actual-size")));
+    closeButton.addEventListener("click", closePreview);
+    viewer.addEventListener("close", restoreArticle);
+    viewer.addEventListener("click", event => { if (event.target === viewer) closePreview(); });
+    document.addEventListener("keydown", event => {
+      if (event.key === "Escape" && viewer.classList.contains("fallback-open")) closePreview();
+    });
+  })();
+</script>
+</body>
+</html>
